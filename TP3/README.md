@@ -10,8 +10,7 @@ Comparando con un compañero sus tiempos fueron de 4.07 segundos con hilos y 5.1
 Esto muestra que usar hilos es más rápido para tareas que pueden hacerse al mismo tiempo, lo que reduce el tiempo total del proceso.
 
 1-c
-
-Después de descomentar unas líneas en el código, el programa tomó más tiempo en completarse porque añadí dos bucles adicionales, que causaban un retraso. Estos bucles se ejecutaban mil veces cada uno dentro de las funciones sumador y restador, sumando tiempo total de ejecución del programa. El cambio en el valor final ocurrió porque el tiempo adicional de ejecución afectaba la modificación del valor de una variable acumulador. Entre cada incremento y decremento de acumulador, el valor de acumulador era afectado por la lógica dentro de esos bucles adicionales, resultando en un valor final diferente.
+Cuando ejecuto los archivos sin #, los procesos de sumador y restador tienen problemas porque ambos intentar acceder a la variable acumulador al mismo tiempo y se soluciona cuando aparecen las lineas como comentario porque los procesos se van a  ejecutar primero uno y después otro.
 
 2-a
 <a href="./TP3/puzzlecorregido.c">puzzle corregido</a>
